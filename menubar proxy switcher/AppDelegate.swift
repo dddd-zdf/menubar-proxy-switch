@@ -23,54 +23,36 @@ func shell(_ command: String) {
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem!
     var statusButton: NSStatusBarButton!
-    var isEnabled: Bool = true
+    var proxystatus: Bool = false
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        statusItem.isVisible = true
         statusButton = statusItem.button!
         statusButton.target = self
         statusButton.action = #selector(Tap)
-        enable()
-    //    if let button = statusItem.button {
-      //      button.image = NSImage(named: "StatusIcon")
-        //    statusItem.menu = menu
+        off()
 
     }
     @objc func Tap() {
-        if isEnabled {
-            disable()
+        if proxystatus {
+            off()
         } else {
-            enable()
+            on()
         }
     }
-    func enable() {
-        // Run anything here
+    func on() {
         shell("echo <password> | sudo -S networksetup -setsocksfirewallproxystate 'Wi-Fi' on")
         statusButton.image = NSImage(named:"On")
-        isEnabled = true
+        proxystatus = true
     }
     
-    func disable() {
-        // Run anything here
+    func off() {
         shell("echo <password> | sudo -S networksetup -setsocksfirewallproxystate 'Wi-Fi' off");
 
         statusButton.image = NSImage(named:"Off")
-        isEnabled = false
+        proxystatus = false
     }
 
     
 }
-    
-//        shell("echo 'tsubasa202an' | sudo -S networksetup -setsocksfirewallproxystate 'Wi-Fi' on")
-    
-//        shell("echo 'tsubasa202an' | sudo -S networksetup -setsocksfirewallproxystate 'Wi-Fi' off");
-        
-    
-//    @IBAction func quitApp(_ sender: Any) {
-//        NSApplication.shared.terminate(self)
-//    }
-//    func applicationWillTerminate(_ aNotification: Notification) {
-  //  }
-
 
 
