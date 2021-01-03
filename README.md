@@ -14,3 +14,7 @@ to-do:
   icons update  
   proxystatus detection  
   password file input  
+
+
+
+(I just learnt it's called status bar!)
