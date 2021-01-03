@@ -13,6 +13,6 @@ to-do:
   feature: 
   
   ☑️ proxy state 
-        icons update
-        proxystatus detection
-        password file input
+     icons update
+     proxystatus detection
+     password file input
