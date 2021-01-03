@@ -1,6 +1,6 @@
 # menubar-proxy-switcher
 
-menubar-proxy-switcher v0.1
+menubar-proxy-switcher v1.0
 
 This is essentially a non-dock tool to run any written shell scripts from the menubar as a shortcut. 
 
