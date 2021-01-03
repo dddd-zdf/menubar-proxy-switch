@@ -30,7 +30,7 @@ Currently it's working as a proxy switch toggle for my private use. Let's see wh
 
 to-do:  
   
-  proxy status √  
+  ~~proxy status~~ √  
   keyboard shortcut  
   password file input  
   icon arts update  
