@@ -11,6 +11,7 @@ Do remember to input the password in shell scripts in file 'AppDelegate.swift'.
 to-do:  
   
   proxy status √  
+  keyboard shortcut
   icons update  
   proxystatus detection  
   password file input
