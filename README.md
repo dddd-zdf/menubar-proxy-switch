@@ -8,8 +8,8 @@ Currently it's working as a proxy switch toggle for my private use. Let's see wh
 
 Do remember to input the password in shell scripts in file 'AppDelegate.swift'.
 
-to-do:
-  proxy status √
-  icons update
-  proxystatus detection
-  password file input
+to-do:  
+  proxy status √  
+  icons update  
+  proxystatus detection  
+  password file input  
