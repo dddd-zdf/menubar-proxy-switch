@@ -673,29 +673,9 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="menubar_proxy_switcher" customModuleProvider="target">
-                    <connections>
-                        <outlet property="menu" destination="h7l-bm-na2" id="XHD-sW-yu2"/>
-                    </connections>
-                </customObject>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="menubar_proxy_switcher" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <menu id="h7l-bm-na2">
-                    <items>
-                        <menuItem title="On" id="LmB-0S-Kxf">
-                            <modifierMask key="keyEquivalentModifierMask"/>
-                            <connections>
-                                <action selector="On:" target="Voe-Tx-rLC" id="UFC-oh-EQT"/>
-                            </connections>
-                        </menuItem>
-                        <menuItem title="Off" id="CtA-yZ-Ad3">
-                            <modifierMask key="keyEquivalentModifierMask"/>
-                            <connections>
-                                <action selector="Off:" target="Voe-Tx-rLC" id="a9F-Kc-dK4"/>
-                            </connections>
-                        </menuItem>
-                    </items>
-                </menu>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>

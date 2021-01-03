@@ -18,38 +18,59 @@ func shell(_ command: String) {
     
 }
 
-
 @main
 
 class AppDelegate: NSObject, NSApplicationDelegate {
-    
-    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+    var statusItem: NSStatusItem!
+    var statusButton: NSStatusBarButton!
+    var isEnabled: Bool = true
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        if let button = statusItem.button {
-            button.image = NSImage(named: "StatusIcon")
-            statusItem.menu = menu
+        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+        statusItem.isVisible = true
+        statusButton = statusItem.button!
+        statusButton.target = self
+        statusButton.action = #selector(Tap)
+        enable()
+    //    if let button = statusItem.button {
+      //      button.image = NSImage(named: "StatusIcon")
+        //    statusItem.menu = menu
 
+    }
+    @objc func Tap() {
+        if isEnabled {
+            disable()
+        } else {
+            enable()
         }
     }
-    
-    
-    @IBOutlet weak var menu: NSMenu!
-    @IBAction func On(_ sender: Any) {
-        shell("echo 'tsubasa202an' | sudo -S networksetup -setsocksfirewallproxystate 'Wi-Fi' on")
-        
+    func enable() {
+        // Run anything here
+        shell("echo <password> | sudo -S networksetup -setsocksfirewallproxystate 'Wi-Fi' on")
+        statusButton.image = NSImage(named:"On")
+        isEnabled = true
     }
     
-    @IBAction func Off(_ sender: Any) {
-        shell("echo 'tsubasa202an' | sudo -S networksetup -setsocksfirewallproxystate 'Wi-Fi' off");
-        
+    func disable() {
+        // Run anything here
+        shell("echo <password> | sudo -S networksetup -setsocksfirewallproxystate 'Wi-Fi' off");
+
+        statusButton.image = NSImage(named:"Off")
+        isEnabled = false
     }
+
+    
+}
+    
+//        shell("echo 'tsubasa202an' | sudo -S networksetup -setsocksfirewallproxystate 'Wi-Fi' on")
+    
+//        shell("echo 'tsubasa202an' | sudo -S networksetup -setsocksfirewallproxystate 'Wi-Fi' off");
+        
     
 //    @IBAction func quitApp(_ sender: Any) {
 //        NSApplication.shared.terminate(self)
 //    }
-    func applicationWillTerminate(_ aNotification: Notification) {
-    }
+//    func applicationWillTerminate(_ aNotification: Notification) {
+  //  }
 
 
-}
 
