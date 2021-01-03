@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B7982A27259BAFB5001A31E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7982A26259BAFB5001A31E3 /* AppDelegate.swift */; };
-		B7982A29259BAFB5001A31E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7982A28259BAFB5001A31E3 /* ViewController.swift */; };
 		B7982A2B259BAFB6001A31E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7982A2A259BAFB6001A31E3 /* Assets.xcassets */; };
 		B7982A2E259BAFB6001A31E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7982A2C259BAFB6001A31E3 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -16,7 +15,6 @@
 /* Begin PBXFileReference section */
 		B7982A23259BAFB5001A31E3 /* menubar proxy switcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "menubar proxy switcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7982A26259BAFB5001A31E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B7982A28259BAFB5001A31E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B7982A2A259BAFB6001A31E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7982A2D259BAFB6001A31E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7982A2F259BAFB6001A31E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				B7982A26259BAFB5001A31E3 /* AppDelegate.swift */,
-				B7982A28259BAFB5001A31E3 /* ViewController.swift */,
 				B7982A2A259BAFB6001A31E3 /* Assets.xcassets */,
 				B7982A2C259BAFB6001A31E3 /* Main.storyboard */,
 				B7982A2F259BAFB6001A31E3 /* Info.plist */,
@@ -132,7 +129,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7982A29259BAFB5001A31E3 /* ViewController.swift in Sources */,
 				B7982A27259BAFB5001A31E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
