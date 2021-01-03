@@ -7,6 +7,7 @@ This is essentially a non-dock tool to run any written shell scripts from the me
 Currently it's working as a proxy switch toggle for my private use. Let's see what we can do with it next.
 
 Do remember to input the password in shell scripts in file 'AppDelegate.swift'.
+
 to-do:
   proxy status √
   icons update
