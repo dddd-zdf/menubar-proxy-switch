@@ -35,4 +35,4 @@ to-do:
   password file input (I'll be able to post a release then)    
   icon arts update  
   proxystatus detection  
-  [launch at login] (https://github.com/sindresorhus/LaunchAtLogin)
+  [launch at login](https://github.com/sindresorhus/LaunchAtLogin)
