@@ -32,6 +32,6 @@ to-do:
   
   ~~proxy status~~ √  
   keyboard shortcut  
-  password file input (I'll be able to post the release then)    
+  password file input (I'll be able to post a release then)    
   icon arts update  
   proxystatus detection  
