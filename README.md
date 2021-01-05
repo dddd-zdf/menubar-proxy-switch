@@ -29,10 +29,9 @@ Currently it's working as a proxy switch toggle for my private use. Let's see wh
 
 
 to-do:  
-  
-  ~~proxy status~~ √  
-  keyboard shortcut  
-  password file input (I'll be able to post a release then)    
-  icon arts update  
-  proxystatus detection  
-  [launch at login](https://github.com/sindresorhus/LaunchAtLogin)
+  - [x] ~~proxy status toggle~~  
+  - [ ] keyboard shortcut  
+  - [ ] password file input (I'll be able to post a release then)    
+  - [ ] icon arts update  
+  - [ ] proxystatus detection  
+  - [ ] [launch at login](https://github.com/sindresorhus/LaunchAtLogin)
