@@ -35,3 +35,6 @@ to-do:
   - [ ] icon arts update  
   - [ ] proxystatus detection  
   - [ ] [launch at login](https://github.com/sindresorhus/LaunchAtLogin)
+
+
+This project is under MIT License.
