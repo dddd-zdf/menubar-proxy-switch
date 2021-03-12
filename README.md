@@ -1,6 +1,6 @@
-# menubar-proxy-switcher
+# menubar-proxy-switch
 
-menubar-proxy-switcher v1.0
+menubar-proxy-switch v1.0
 
 
 About
